@@ -1,0 +1,668 @@
+@font-face {
+	font-family: Jost;
+	src: url(../assets/Fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+
+body {
+	background: rgb(255, 255, 255);
+	transition: 0.3s;
+}
+
+p {
+	font-family: Jost;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	border-radius: 0px 0px 5px 5px;
+	background: rgb(231, 230, 230);
+}
+
+label {
+	font-family: Jost;
+	font-size: 20px;
+}
+
+#main-form {
+	position: absolute;
+	padding: 200px 350px;
+	left: 610px;
+	top: 340px;
+	border-radius: 5px;
+	background: rgb(231, 230, 230);
+}
+
+#form-label {
+	position: absolute;
+	width: 105px;
+	height: 58px;
+	left: 245px;
+	top: 25px;
+	display: flex;
+	flex-direction: row;
+	color: rgb(226, 125, 96);
+	font-family: Jost;
+	font-size: 40px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+#form-login {
+	position: absolute;
+	left: 50px;
+	top: 120px;
+}
+
+#form-password {
+	position: absolute;
+	left: 50px;
+	top: 200px;
+}
+
+#form-login-input {
+	top: 295px;
+	left: 50px;
+	background-color: rgb(232, 169, 124);
+}
+
+#form-reg {
+	top: 295px;
+	left: 360px;
+	background-color: rgb(65, 179, 163);
+}
+
+.form-input {
+	width: 600px;
+	height: 60px;
+	border-radius: 5px;
+	background: rgb(196, 196, 196);
+	font-family: Jost;
+	font-size: 40px;
+	border: none;
+}
+
+.form-button {
+	position: absolute;
+	width: 290px;
+	height: 60px;
+	border-radius: 5px;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(255, 255, 255);
+	font-family: Jost;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 58px;
+	letter-spacing: 0px;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+.header-title {
+	position: absolute;
+	width: 187px;
+	left: 27px;
+	top: 6px;
+	display: flex;
+	flex-direction: row;
+	font-family: Jost;
+	font-size: 40px;
+	font-weight: 400px;
+	color: rgb(226, 125, 96);
+}
+
+.header-exit {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	left: 1700px;
+	top: 10px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	background: rgb(65, 179, 163);
+	color: rgb(255, 255, 255);
+	font-family: Jost;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0px;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+#name {
+	position: absolute;
+	width: 900px;
+	height: 58px;
+	left: 60px;
+	right: -60px;
+	top: 108px;
+	bottom: -84.5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(17, 17, 17);
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 58px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+#child {
+	position: absolute;
+	width: 220px;
+	height: 35px;
+	left: 1670px;
+	top: 119px;
+	bottom: 1247px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(17, 17, 17);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+#town {
+	position: absolute;
+	width: 300px;
+	height: 35px;
+	left: 60px;
+	right: 300px;
+	top: 160px;
+	bottom: -108px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(188, 188, 188);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+#chertochka {
+	position: absolute;
+	width: 28px;
+	height: 35px;
+	left: 230px;
+	right: 286px;
+	top: 160px;
+	bottom: -107.5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(188, 188, 188);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0px;
+	text-align: center;
+}
+
+#region {
+	position: absolute;
+	width: 300px;
+	height: 35px;
+	left: 250px;
+	right: 73px;
+	top: 160px;
+	bottom: -107.5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: rgb(188, 188, 188);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 35px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.table {
+	width: 80%;
+	border: none;
+	margin-bottom: 20px;
+	margin-top: 120px;
+	margin-left: 60px;
+}
+
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	font-family: Jost;
+}
+
+.table tbody td {
+	text-align: left;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+	font-family: Jost;
+}
+
+.table thead tr th:first-child,
+.table tbody tr td:first-child {
+	border-left: none;
+}
+
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+	border-right: none;
+}
+
+.table tbody tr:nth-child(even) {
+	background: #f3f3f3;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#fixtable {
+	margin-top: 20px;
+}
+
+#back {
+	position: absolute;
+	width: 966px;
+	height: 704px;
+	left: 525px;
+	right: 477px;
+	top: 250px;
+	bottom: 378px;
+	border-radius: 5px;
+	background: rgb(231, 230, 230);
+}
+
+.button-people-group {
+	border-radius: 5px;
+	background: rgb(133, 204, 201);
+	font-family: Jost;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0px;
+	color: #f3f3f3;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+#button-people {
+	position: absolute;
+	width: 395px;
+	height: 83.29px;
+	left: 50px;
+	right: -539px;
+	top: 50px;
+	bottom: -327px;
+}
+
+#button-group {
+	position: absolute;
+	width: 395px;
+	height: 83.29px;
+	left: 510px;
+	right: -539px;
+	top: 50px;
+	bottom: -327px;
+}
+
+.button-add-kvant {
+	border-radius: 5px;
+	background: rgb(232, 169, 124);
+	font-family: Jost;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0px;
+	color: #f3f3f3;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+#button-add {
+	position: absolute;
+	width: 855px;
+	height: 64.87px;
+	left: 50px;
+	right: -539px;
+	top: 250px;
+	bottom: -544px;
+}
+
+#button-add-group {
+	position: absolute;
+	width: 855px;
+	height: 64.87px;
+	left: 50px;
+	right: -539px;
+	top: 360px;
+	bottom: -544px;
+}
+
+#button-add-teacher {
+	position: absolute;
+	width: 855px;
+	height: 64.87px;
+	left: 50px;
+	right: -539px;
+	top: 470px;
+	bottom: -544px;
+}
+
+#button-add-student {
+	position: absolute;
+	width: 855px;
+	height: 64.87px;
+	left: 50px;
+	right: -539px;
+	top: 580px;
+	bottom: -544px;
+}
+
+#error-message {
+	position: absolute;
+	color: red;
+	text-align: center;
+	top: 66%;
+	left: 35%;
+}
+
+#save-add {
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	left: 3.7%;
+	border-radius: 5px;
+	background: rgb(133, 204, 201);
+	font-family: Jost;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 0px;
+	letter-spacing: 0px;
+	color: #f3f3f3;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:hover {
+		color: rgb(133, 204, 201);
+		background-color: white;
+		background-repeat: no-repeat; 
+	}
+}
+
+#save-add2 {
+	position: absolute;
+	width: 65px;
+	height: 20px;
+	left: 4%;
+	border-radius: 5px;
+	background: rgb(133, 204, 201);
+	font-family: Jost;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 0px;
+	letter-spacing: 0px;
+	color: #f3f3f3;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:hover {
+		color: rgb(133, 204, 201);
+		background-color: white;
+		background-repeat: no-repeat; 
+	}
+}
+.input-add {
+	font-size: larger;
+	font-family: Jost;
+	border: none;
+	outline: none;
+	width: 100%;
+	background-color: #f3f3f3;
+}
+
+.select-add {
+	font-family: Jost;
+	outline: none;
+	border: none;
+	background-color: #f3f3f3;
+}
+
+.searchbutton {
+	border-radius: 5px;
+	background: rgb(232, 169, 124);
+	font-family: Jost;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0px;
+	color: #f3f3f3;
+	text-align: center;
+	border: 1px black;
+	transition: 0.3s;
+
+	&:active {
+		transform: scale(0.95);
+	}
+}
+
+#searchbutton {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	left: 1450px;
+	top: 275px;
+}
+
+#gnamech {
+	position: absolute;
+	top: 27.5%;
+	left: 300px;
+}
+
+#knamech {
+	position: absolute;
+	top: 27.5%;
+	left: 460px;
+}
+
+#lvlch {
+	position: absolute;
+	top: 27.5%;
+	left: 640px;
+}
+
+#teacherch {
+	position: absolute;
+	top: 27.5%;
+	left: 840px;
+}
+
+#search {
+	position: absolute;
+	top: 27.6%;
+	left: 60px;
+	width: 220px;
+	height: 30px;
+	border-radius: 5px;
+	background: #ddd;
+	font-family: Jost;
+	font-size: 20px;
+	border: none;
+}
+
+#search2 {
+	position: absolute;
+	top: 27.6%;
+	left: 60px;
+	width: 190px;
+	height: 30px;
+	border-radius: 5px;
+	background: #ddd;
+	font-family: Jost;
+	font-size: 20px;
+	border: none;
+}
+
+#lastch {
+	position: absolute;
+	top: 27.5%;
+	left: 280px;
+}
+
+#firstch {
+	position: absolute;
+	top: 27.5%;
+	left: 410px;
+}
+
+#patch {
+	position: absolute;
+	top: 27.5%;
+	left: 490px;
+}
+
+#birthch {
+	position: absolute;
+	top: 27.5%;
+	left: 610px;
+}
+
+#sexch {
+	position: absolute;
+	top: 27.5%;
+	left: 800px;
+}
+
+#groupch {
+	position: absolute;
+	top: 27.5%;
+	left: 880px;
+}
+
+#kvantch {
+	position: absolute;
+	top: 27.5%;
+	left: 980px;
+}
+
+#pfdoch {
+	position: absolute;
+	top: 27.5%;
+	left: 1150px;
+}
+
+#schoolch {
+	position: absolute;
+	top: 27.5%;
+	left: 1250px;
+}
+
+#parch {
+	position: absolute;
+	top: 27.5%;
+	left: 1355px;
+}
+
+#pnumberch {
+	position: absolute;
+	top: 27.5%;
+	left: 1475px;
+}
+
+#seachbutton2 {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	left: 1710px;
+	top: 280px;
+}
+
+.delete-row {
+	position: absolute;
+	left: 4%;
+	background-color: red;
+	border: 1px solid red;
+	width: 65px;
+	height: 20px;
+	color: white;
+	font-family: 'Jost';
+	border-radius: 5px;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: white;
+		background-image: url("../assets/svg/delete.svg");
+		background-repeat: no-repeat;
+		background-size: 30%;
+		background-position: center;
+		content: none;
+		text-indent: -50px;  
+	}
+}
+
+.delete-row-p {
+	position: absolute;
+	left: 3.7%;
+	background-color: red;
+	border: 1px solid red;
+	width: 30px;
+	height: 20px;
+	color: white;
+	font-family: 'Jost';
+	border-radius: 5px;
+	transition: 0.5s;
+
+
+	&:hover {
+		background-color: white;
+		background-image: url("../assets/svg/delete.svg");
+		background-repeat: no-repeat;
+		background-size: 70%;
+		background-position: center;
+		content: none;
+		text-indent: -50px;  
+	}
+}
+
