@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Ноя 21 2024 г., 06:54
+-- Время создания: Ноя 21 2024 г., 13:45
 -- Версия сервера: 10.4.32-MariaDB
 -- Версия PHP: 8.2.12
 
@@ -99,7 +99,17 @@ CREATE TABLE `kvants` (
 --
 
 INSERT INTO `kvants` (`id`, `name`) VALUES
-(0, 'N/A');
+(0, 'N/A'),
+(1, 'Промробоквантум'),
+(2, 'Геоквантум'),
+(3, 'Энерджиквантум'),
+(4, 'VR/AR-квантум'),
+(5, 'Аэроквантум'),
+(6, 'Мультимедиа'),
+(7, 'Основы цифровых технологий'),
+(8, 'Шахматы'),
+(9, 'Математика'),
+(10, 'Английский');
 
 -- --------------------------------------------------------
 
@@ -265,7 +275,7 @@ ALTER TABLE `groups`
 -- AUTO_INCREMENT для таблицы `kvants`
 --
 ALTER TABLE `kvants`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `parents`
